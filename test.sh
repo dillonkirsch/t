@@ -9,6 +9,14 @@ source ~/.bashrc
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
 apt install git-lfs
 git lfs install 
+mkdir /workspace/models
+mkdir /workspace/datasets
+cd /workspace/datasets
+git lfs install
+git clone https://huggingface.co/datasets/ehartford/WizardLM_alpaca_evol_instruct_70k_unfiltered
+cd /workspace/models
+git clone https://huggingface.co/huggyllama/llama-7b
+cd /workspace
 conda create -n llamax python=3.10
 conda activate llamax
 git clone https://github.com/AetherCortex/Llama-X.git
