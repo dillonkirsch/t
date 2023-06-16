@@ -9,16 +9,11 @@ fi
 apt install sudo -y
 apt update
 apt upgrade -y
-curl -L "https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh" --output ana.sh
-chmod +x ./ana.sh
-./ana.sh
-sleep 2
+shell=BASH
+wget https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh -O ~/anaconda3.sh
+bash ~/anaconda3.sh -b -p $HOME/anaconda3
 /root/anaconda3/bin/conda init
-sleep 2
 source ~/.bashrc
-sleep 2
-conda
-sleep 2
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
 apt install git-lfs
 git lfs install 
