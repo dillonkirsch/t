@@ -60,7 +60,7 @@ conda create -n llamax python=3.10
 conda activate llamax
 git clone https://github.com/AetherCortex/Llama-X.git
 cd Llama-X/src
-conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
+conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c --yes pytorch
 git clone https://github.com/huggingface/transformers.git
 cd transformers
 pip install -e .
