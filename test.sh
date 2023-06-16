@@ -14,6 +14,7 @@ wget https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh -O ~/
 bash ~/anaconda3.sh -b -p $HOME/anaconda3
 /root/anaconda3/bin/conda init
 source root/.bashrc
+conda
 # curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
 # apt install git-lfs
 # git lfs install 
