@@ -1,7 +1,7 @@
 deepspeed train_freeform.py  \
-    --model_name_or_path "/workspace/models/llama-7b" \
-    --data_path "/workspace/datasets/WizardLM_evol_instruct_V2_196k/WizardLM_evol_instruct_V2_143k.json" \
-    --output_dir "/workspace/models/WizardLM-7B-Uncensored" \
+    --model_name_or_path /workspace/models/llama-7b \
+    --data_path /workspace/datasets/WizardLM_evol_instruct_V2_196k/WizardLM_evol_instruct_V2_143k.json \
+    --output_dir /workspace/models/WizardLM-7B-Uncensored \
     --num_train_epochs 3 \
     --model_max_length 2048 \
     --per_device_train_batch_size 8 \
