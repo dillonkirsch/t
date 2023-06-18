@@ -24,11 +24,11 @@ git clone https://huggingface.co/"$repo"
 cd /workspace
 git clone https://github.com/nlpxucan/WizardLM.git
 cd /workspace
-conda create -n llamax python=3.10
+conda create -y -n llamax python=3.10
 conda activate llamax
 git clone https://github.com/AetherCortex/Llama-X.git
 cd Llama-X/src
-conda install pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
+conda install -y pytorch==1.12.0 torchvision==0.13.0 torchaudio==0.12.0 cudatoolkit=11.3 -c pytorch
 git clone https://github.com/huggingface/transformers.git
 cd transformers
 pip install -e .
@@ -39,4 +39,4 @@ cd src
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/train_freeform.py
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/inference_wizardlm.py
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/weight_diff_wizard.py
-
+rm ./train.py
