@@ -40,3 +40,4 @@ wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/train
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/inference_wizardlm.py
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/weight_diff_wizard.py
 rm ./train.py
+wget -O train.py https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/train_freeform.py
