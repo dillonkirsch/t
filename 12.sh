@@ -42,22 +42,3 @@ wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/train
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/train_freeform.py
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/weight_diff_wizard.py
 python weight_diff_wizard.py recover --path_raw /workspace/$repo/ --path_diff /workspace/$training/ --path_tuned /workspace/$repo_tuned
-
-
-wget https://raw.githubusercontent.com/dillonkirsch/t/main/test1.sh
-chmod +x ./test1.sh
-./test1.sh
-
-
-
-
-pip install datasets dataset
-
-
-pip install fire train transformers huggingface_hub tqdm transformers wandb
-
-
-
-
-
-python weight_diff_wizard.py recover --path_raw /workspace/models/llama-7b --path_diff /workspace/datasets/WizardLM_alpaca_evol_instruct_70k_unfiltered --path_tuned /workspace/llama-7b_tuned
