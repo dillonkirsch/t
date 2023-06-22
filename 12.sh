@@ -85,5 +85,5 @@ wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/infer
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/train_freeform.py
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/train_freeform.py
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/weight_diff_wizard.py
-python weight_diff_wizard.py recover --path_raw /workspace/$repo/ --path_diff /workspace/$training/ --path_tuned /workspace/$repo_tuned
+python weight_diff_wizard.py recover --path_raw /workspace/$repo/ --path_diff /workspace/$training/ --path_tuned /workspace/$repo_tuned --device "cuda
 
