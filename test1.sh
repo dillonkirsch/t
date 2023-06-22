@@ -1,6 +1,6 @@
 deepspeed train_freeform.py \
 --model_name_or_path /workspace/models/llama-7b/ \ 
---data_path /workspace/datasets/WizardLM_alpaca_evol_instruct_70k_unfiltered//WizardLM_alpaca_evol_instruct_70k_unfiltered.json \
+--data_path /workspace/datasets/WizardLM_alpaca_evol_instruct_70k_unfiltered/WizardLM_alpaca_evol_instruct_70k_unfiltered.json \
 --output_dir /workspace/models/WizardLM-7B-Uncensored_last/ \
 --num_train_epochs 3 \
 --model_max_length 2048 \
