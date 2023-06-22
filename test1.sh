@@ -15,7 +15,7 @@ deepspeed train_freeform.py \
     --warmup_steps 2 \
     --logging_steps 2 \
     --lr_scheduler_type "cosine" \
-    --report_to "tensorboard" \
+    --report_to "wandb" \
     --gradient_checkpointing True \
     --deepspeed configs/deepspeed_config.json \
     --fp16 True
