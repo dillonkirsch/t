@@ -24,7 +24,7 @@ cd /workspace
 git clone https://github.com/nlpxucan/WizardLM.git
 git clone https://huggingface.co/"$repo"
 git clone https://huggingface.co/"$training"
-git clone https://huggingface.co/"$dataset_download"
+git clone https://huggingface.co/datasets/"$dataset_download"
 conda create -y -n llamax python=3.10
 conda activate llamax
 git clone https://github.com/AetherCortex/Llama-X.git
