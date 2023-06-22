@@ -60,7 +60,7 @@ apt update
 apt upgrade -y
 apt install git-lfs python3-full nano pipx -y
 git lfs install
-pipx install wandb
+pipx install wandb dataset datasets
 pipx ensurepath
 source ~/.bashrc
 wandb login
