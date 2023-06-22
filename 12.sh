@@ -16,10 +16,10 @@ apt update
 apt upgrade -y
 apt install git-lfs python3-full nano pipx -y
 git lfs install
-pipx install wandb
+pipx install clearml
 pipx ensurepath
 source ~/.bashrc
-wandb login
+clearml-init
 cd /workspace
 git clone https://github.com/nlpxucan/WizardLM.git
 git clone https://huggingface.co/"$repo"
