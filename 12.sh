@@ -45,11 +45,11 @@
 if [ -z "$1" ]; then
     read -p "Please enter the model in org/repo format (e.g., huggyllama/llama-7b): " repo
     read -p "Please enter the training in org/repo format (e.g., WizardLM/WizardLM-7B-V1.0): " training
-    read -p "Please enter the daataset in org/repo format (e.g., WizardLM/WizardLM_evol_instruct_70k): " dataset    
+    read -p "Please enter the daataset in org/repo format (e.g., WizardLM/WizardLM_evol_instruct_70k): " dataset_download
 else
     repo=$1
     training=$2
-    dataset=$3
+    dataset_download=$3
 fi
 echo "Please Run:"
 echo "shell=BASH && wget https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh -O ~/anaconda3.sh && bash ~/anaconda3.sh -b -p $HOME/anaconda3 && /root/anaconda3/bin/conda init &&source /root/.bashrc"
@@ -68,7 +68,7 @@ cd /workspace
 git clone https://github.com/nlpxucan/WizardLM.git
 git clone https://huggingface.co/"$repo"
 git clone https://huggingface.co/"$training"
-git clone https://huggingface.co/"$dataset"
+git clone https://huggingface.co/"$dataset_download"
 conda create -y -n llamax python=3.10
 conda activate llamax
 git clone https://github.com/AetherCortex/Llama-X.git
