@@ -21,8 +21,10 @@ git lfs install
 pipx install clearml
 pipx install datasets
 pipx install dataset
+pipx install fschat
 pip install datasets
 pip install dataset
+pip install fschat
 pipx ensurepath
 source ~/.bashrc
 clearml-init
@@ -49,3 +51,6 @@ wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/train
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/weight_diff_wizard.py
 cd /workspace
 git clone https://github.com/lm-sys/FastChat.git
+cd FastChat
+pip3 install --upgrade pip
+pip3 install -e .
