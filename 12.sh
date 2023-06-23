@@ -16,7 +16,7 @@ apt update
 apt upgrade -y
 apt install git-lfs python3-full nano pipx -y
 git lfs install
-pipx install clearml
+pipx install clearml dataset datasets
 pipx ensurepath
 source ~/.bashrc
 clearml-init
