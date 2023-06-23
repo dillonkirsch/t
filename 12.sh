@@ -20,6 +20,8 @@ git lfs install
 pipx install clearml
 pipx install datasets
 pipx install dataset
+pip install datasets
+pip install dataset
 pipx ensurepath
 source ~/.bashrc
 clearml-init
