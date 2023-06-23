@@ -46,3 +46,5 @@ wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/infer
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/train_freeform.py
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/train_freeform.py
 wget https://raw.githubusercontent.com/nlpxucan/WizardLM/main/WizardLM/src/weight_diff_wizard.py
+cd /workspace
+git clone https://github.com/lm-sys/FastChat.git
