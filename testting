@@ -26,8 +26,8 @@ pipx install fschat --include-deps
 pip install datasets
 pip install dataset
 pip install fschat
-pipx ensurepath
 source ~/.bashrc
+pipx ensurepath
 clearml-init
 cd /workspace
 git clone https://github.com/HazyResearch/flash-attention.git
