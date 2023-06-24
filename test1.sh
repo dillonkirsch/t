@@ -28,3 +28,4 @@ torchrun --nproc_per_node=2 --master_port=20001 /workspace/FastChat/fastchat/tra
   --model_max_length 2048 \
   --gradient_checkpointing True \
   --lazy_preprocess True
+# report to clearml
