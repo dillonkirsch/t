@@ -11,9 +11,9 @@ else
 fi
 echo "Please Run:"
 echo "shell=BASH && wget https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh -O ~/anaconda3.sh && bash ~/anaconda3.sh -b -p $HOME/anaconda3 && /root/anaconda3/bin/conda init && source /root/.bashrc"
-shell=BASH && wget https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh -O ~/anaconda3.sh && bash ~/anaconda3.sh -b -p $HOME/anaconda3 && /root/anaconda3/bin/conda init && source /root/.bashrc
-conda deactivate
-conda config --set auto_activate_base false
+#shell=BASH && wget https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh -O ~/anaconda3.sh && bash ~/anaconda3.sh -b -p $HOME/anaconda3 && /root/anaconda3/bin/conda init && source /root/.bashrc
+#conda deactivate
+#conda config --set auto_activate_base false
 apt install sudo -y
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
 apt update
@@ -36,6 +36,10 @@ git clone https://huggingface.co/"$repo"
 git clone https://huggingface.co/"$training"
 git clone https://huggingface.co/datasets/"$dataset_download"
 wget $json_data
+git clone https://github.com/HazyResearch/flash-attention.git
+cd flash-attention
+python setup.py install
+cd /workspace
 conda create -y -n llamax python=3.10
 conda activate llamax
 git clone https://github.com/AetherCortex/Llama-X.git
