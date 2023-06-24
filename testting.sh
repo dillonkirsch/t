@@ -23,12 +23,15 @@ pipx install clearml --include-deps
 pipx install datasets --include-deps
 pipx install dataset --include-deps
 pipx install fschat --include-deps
+pipx install clearml-agent --include-deps
 pip install datasets
 pip install dataset
 pip install fschat
+pip isntall clearml-agent
 source ~/.bashrc
 pipx ensurepath
 clearml-init
+clearml-agent init
 cd /workspace
 git clone https://github.com/HazyResearch/flash-attention.git
 cd flash-attention
