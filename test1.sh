@@ -3,7 +3,7 @@ source /workspace/venv/bin/activate
 export NCCL_P2P_DISABLE=1
 export NCCL_P2P_LEVEL=LOC
 
-torchrun --nproc_per_node=8 --master_port=20001 /workspace/FastChat/fastchat/train/train_mem.py \
+torchrun --nproc_per_node=1 --master_port=20001 /workspace/FastChat/fastchat/train/train_mem.py \
   --model_name_or_path /workspace/llama-7b \
   --data_path /workspace/as_conversations.json \
   --bf16 True \
