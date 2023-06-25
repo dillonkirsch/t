@@ -19,28 +19,29 @@ apt update
 apt upgrade -y
 apt install git-lfs python3-full python3-pip nano pipx cmake build-essential -y
 git lfs install
-pipx install openai 
-pipx install pymilvus 
-pipx install datasets 
-pipx install tqdm
-pipx install ensorboard
-pipx install tensorboardX
-pipx install clearml 
-pipx install clearml-agent
-pipx install fastai
-pipx install fschat
-pipx install dataset
+pipx install openai --include-deps
+pipx install pymilvus --include-deps
+pipx install datasets --include-deps
+pipx install tqdm --include-deps
+pipx install ensorboard --include-deps
+pipx install tensorboardX --include-deps
+pipx install clearml --include-deps
+pipx install clearml-agent --include-deps
+pipx install fastai --include-deps
+pipx install fschat --include-deps
+pipx install dataset --include-deps
 pip install openai 
-pip install pymilvus
+pip install pymilvus 
 pip install datasets
-pip install tqdm
-pip install tensorboard
+pip install tqdm 
+pip install tensorboard 
 pip install tensorboardX
 pip install clearml
-pip install clearml-agent
-pip install fastai
-pip install fschat
+pip install clearml-agent 
+pip install fastai 
+pip install fschat 
 pip install dataset
+echo 'export PATH=$PATH:/root/.local/bin' >> ~/.bashrc
 pipx ensurepath
 source ~/.bashrc
 clearml-init
