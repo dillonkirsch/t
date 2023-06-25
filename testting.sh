@@ -17,7 +17,7 @@ echo "shell=BASH && wget https://repo.anaconda.com/archive/Anaconda3-2023.03-1-L
 curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash
 apt update
 apt upgrade -y
-apt install git-lfs python3-full nano pipx cmake build-essential -y
+apt install git-lfs python3-full python3-pip nano pipx cmake build-essential -y
 git lfs install
 pipx install openai pymilvus datasets tqdm tensorboard tensorboardX clearml clearml-agent fastai fschat --include-deps
 pipx install dataset --include-deps
