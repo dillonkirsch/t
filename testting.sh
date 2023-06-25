@@ -19,17 +19,12 @@ apt update
 apt upgrade -y
 apt install git-lfs python3-full nano pipx cmake build-essential -y
 git lfs install
-pipx install clearml --include-deps
-pipx install datasets --include-deps
+pipx install openai pymilvus datasets tqdm tensorboard tensorboardX clearml clearml-agent fastai fschat --include-deps
 pipx install dataset --include-deps
-pipx install fschat --include-deps
-pipx install clearml-agent --include-deps
-pip install datasets
-pip install dataset
-pip install fschat
-pip install clearml-agent
-source ~/.bashrc
+pip openai pymilvus datasets tqdm tensorboard tensorboardX clearml clearml-agent fastai fschat
+pip install dataset --include-deps
 pipx ensurepath
+source ~/.bashrc
 clearml-init
 clearml-agent init
 cd /workspace
@@ -63,3 +58,16 @@ git clone https://github.com/lm-sys/FastChat.git
 cd FastChat
 pip3 install --upgrade pip
 pip3 install -e .
+
+
+
+
+# pipx install clearml --include-deps
+# pipx install datasets --include-deps
+# pipx install dataset --include-deps
+# pipx install fschat --include-deps
+# pipx install clearml-agent --include-deps
+# pip install datasets
+# pip install dataset
+# pip install fschat
+# pip install clearml-agent
