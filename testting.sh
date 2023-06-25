@@ -41,6 +41,7 @@ pip install clearml-agent
 pip install fastai 
 pip install fschat 
 pip install dataset
+pip install einops
 echo 'export PATH=$PATH:/root/.local/bin' >> ~/.bashrc
 pipx ensurepath
 source ~/.bashrc
