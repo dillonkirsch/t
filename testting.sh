@@ -27,7 +27,7 @@ pipx install clearml-agent --include-deps
 pip install datasets
 pip install dataset
 pip install fschat
-pip isntall clearml-agent
+pip install clearml-agent
 source ~/.bashrc
 pipx ensurepath
 clearml-init
