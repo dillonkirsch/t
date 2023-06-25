@@ -22,6 +22,7 @@ torchrun --nproc_per_node=1 --master_port=20001 /workspace/FastChat/fastchat/tra
   --warmup_ratio 0.04 \
   --lr_scheduler_type "cosine" \
   --logging_steps 1 \
+  --report_to "clearml" \
   --fsdp "full_shard auto_wrap offload" \
   --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer' \
   --tf32 True \
