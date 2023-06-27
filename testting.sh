@@ -78,6 +78,8 @@ git clone https://github.com/lm-sys/FastChat.git
 cd FastChat
 pip3 install --upgrade pip
 pip3 install -e .
+wget https://raw.githubusercontent.com/dillonkirsch/t/main/test1.sh
+chmod +x ./test1.sh
 
 
 
